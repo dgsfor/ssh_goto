@@ -97,7 +97,7 @@ def getRegionMachine(regsimp):
 			num = getPrettyTable(regidict)
 			search_instance = raw_input("请输入要查询的主机或ssh主机的id：")
 			if search_instance.isdigit() and int(search_instance) <= num and int(search_instance) > 0:
-				ipaddr = after_search[int(search_instance) - 1][0][0]['privateIP']
+				ipaddr = regidict[int(search_instance) - 1][0]['privateIP']
 				print("开始ssh：%s" % (regidict[int(search_instance) - 1][0]['privateIP']))
 				sshConnect(ipaddr)
 			elif search_instance in ['exit','EXIT']:
