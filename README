@@ -34,3 +34,6 @@ GOTO：
 	4.里面有一个get_json_file.sh的文件，aws服务器信息统一会收集到新加坡ops机器，然后执行该脚本获取到自己的加目录
 	  新加坡ops机器有定时任务在跑会定时更新aws服务器信息，所以当有服务器不在列表中，你可以手动执行该脚本进行获取。
 	5.可能会有一个警告，需要安装python-Levenshtein
+截图展示：
+![](img_url)(https://github.com/gsgs-libin/ssh_goto/blob/master/ssh_goto_utils/img/choose_which_region.png)
+![](img_url)(https://github.com/gsgs-libin/ssh_goto/blob/master/ssh_goto_utils/img/choose_which_agent.png)
